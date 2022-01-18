@@ -15,7 +15,7 @@
 ---
 
 ## Key Features
-- Vanilla SwiftUI + Combine + MVVM
+- SwiftUI
 - No external dependencies
 - UIViewControllerRepresentable
 
