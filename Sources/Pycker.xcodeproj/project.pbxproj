@@ -11,11 +11,10 @@
 		18BF2BFE27974CC700D68571 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2BFD27974CC700D68571 /* ContentView.swift */; };
 		18BF2C0027974CC800D68571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF2BFF27974CC800D68571 /* Assets.xcassets */; };
 		18BF2C0327974CC800D68571 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF2C0227974CC800D68571 /* Preview Assets.xcassets */; };
-		18BF2C0527974CC800D68571 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2C0427974CC800D68571 /* Persistence.swift */; };
-		18BF2C0827974CC800D68571 /* Pycker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2C0627974CC800D68571 /* Pycker.xcdatamodeld */; };
 		18BF2C1227974CC800D68571 /* PyckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2C1127974CC800D68571 /* PyckerTests.swift */; };
 		18BF2C1C27974CC800D68571 /* PyckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2C1B27974CC800D68571 /* PyckerUITests.swift */; };
 		18BF2C1E27974CC800D68571 /* PyckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2C1D27974CC800D68571 /* PyckerUITestsLaunchTests.swift */; };
+		18BF2C2F27974EE000D68571 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2C2E27974EE000D68571 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +40,12 @@
 		18BF2BFD27974CC700D68571 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18BF2BFF27974CC800D68571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BF2C0227974CC800D68571 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		18BF2C0427974CC800D68571 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		18BF2C0727974CC800D68571 /* Pycker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pycker.xcdatamodel; sourceTree = "<group>"; };
 		18BF2C0D27974CC800D68571 /* PyckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BF2C1127974CC800D68571 /* PyckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyckerTests.swift; sourceTree = "<group>"; };
 		18BF2C1727974CC800D68571 /* PyckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BF2C1B27974CC800D68571 /* PyckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyckerUITests.swift; sourceTree = "<group>"; };
 		18BF2C1D27974CC800D68571 /* PyckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18BF2C2E27974EE000D68571 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +96,10 @@
 		18BF2BFA27974CC700D68571 /* Pycker */ = {
 			isa = PBXGroup;
 			children = (
-				18BF2BFB27974CC700D68571 /* PyckerApp.swift */,
-				18BF2BFD27974CC700D68571 /* ContentView.swift */,
-				18BF2BFF27974CC800D68571 /* Assets.xcassets */,
-				18BF2C0427974CC800D68571 /* Persistence.swift */,
-				18BF2C0627974CC800D68571 /* Pycker.xcdatamodeld */,
-				18BF2C0127974CC800D68571 /* Preview Content */,
+				18BF2C2B27974E0600D68571 /* App */,
+				18BF2C2C27974E2300D68571 /* Views */,
+				18BF2C2D27974EC900D68571 /* Helpers */,
+				18BF2C2A27974DE900D68571 /* Supporting Files */,
 			);
 			path = Pycker;
 			sourceTree = "<group>";
@@ -131,6 +127,39 @@
 				18BF2C1D27974CC800D68571 /* PyckerUITestsLaunchTests.swift */,
 			);
 			path = PyckerUITests;
+			sourceTree = "<group>";
+		};
+		18BF2C2A27974DE900D68571 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BF2BFF27974CC800D68571 /* Assets.xcassets */,
+				18BF2C0127974CC800D68571 /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18BF2C2B27974E0600D68571 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18BF2BFB27974CC700D68571 /* PyckerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18BF2C2C27974E2300D68571 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18BF2BFD27974CC700D68571 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18BF2C2D27974EC900D68571 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18BF2C2E27974EE000D68571 /* ImagePicker.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BF2C0527974CC800D68571 /* Persistence.swift in Sources */,
-				18BF2C0827974CC800D68571 /* Pycker.xcdatamodeld in Sources */,
+				18BF2C2F27974EE000D68571 /* ImagePicker.swift in Sources */,
 				18BF2BFE27974CC700D68571 /* ContentView.swift in Sources */,
 				18BF2BFC27974CC700D68571 /* PyckerApp.swift in Sources */,
 			);
@@ -354,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -426,10 +454,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Pycker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Pycker/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = L4CX4QKSV5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,10 +484,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Pycker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Pycker/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = L4CX4QKSV5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -486,7 +516,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L4CX4QKSV5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.PyckerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,7 +536,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L4CX4QKSV5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.PyckerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,6 +555,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L4CX4QKSV5;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.PyckerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,6 +574,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L4CX4QKSV5;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.PyckerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -593,19 +625,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		18BF2C0627974CC800D68571 /* Pycker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				18BF2C0727974CC800D68571 /* Pycker.xcdatamodel */,
-			);
-			currentVersion = 18BF2C0727974CC800D68571 /* Pycker.xcdatamodel */;
-			path = Pycker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 18BF2BF027974CC700D68571 /* Project object */;
 }
